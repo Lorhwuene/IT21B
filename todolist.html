@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function addTask(){
+        const input = document.getElementById("taskInput");
+        const value = input.value.trim();
+        console.log("getTaskText() called -> ",value);
+        return value;
+    }
+
+    function addTaskItem(taskText){
+        const li = document.createElement("li");
+        li.textContent = taskText;
+
+        document.getElementById("tasklist").apprendChild(li);
